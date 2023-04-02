@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;679&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  background: url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  /* background-origin: center; */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  /* background: red; */
+  /* backdrop-filter: blur(50px); */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links a {
+  position: relative;
+  margin-left: 40px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+.links a::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -6px;
+  background: #b1cef7;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.links a:hover {
+  color: #b1cef7;
+}
+.links a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.btn-login {
+  margin-left: 40px;
+  width: 100px;
+  height: 33px;
+  font-size: 1.1em;
+  margin-right: 20px;
+  background: #859cb9;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  color: white;
+  transition: 0.5s ease;
+}
+.btn-login:hover {
+  background: #445670;
+}
+
+.logo {
+  color: white;
+}
+
+.login-box {
+  position: relative;
+  /* background: green; */
+  backdrop-filter: blur(20px);
+  width: 400px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #7591b8;
+  border-radius: 20px;
+}
+.login-box h2 {
+  font-weight: 600;
+  font-size: 2em;
+  color: #fff;
+}
+
+form {
+  width: 100%;
+  padding: 40px;
+  padding-top: 0;
+}
+.input-box {
+  color: #7591b8;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  border-bottom: 2px solid #7591b8;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -10px;
+}
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  transition: 0.7s ease;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  color: #c8defc;
+  font-weight: 500;
+  padding: 0 35px 0 5px;
+}
+.input-box .icons {
+  position: absolute;
+  right: 8px;
+  color: #7591b8;
+  line-height: 57px;
+  font-size: 1.1em;
+}
+.remember {
+  display: flex;
+  justify-content: space-between;
+}
+.remember label {
+  color: #7591b8;
+  font-weight: 500;
+}
+.remember input {
+  accent-color: #7591b8;
+  margin-right: 5px;
+}
+.remember a {
+  color: #7591b8;
+  text-decoration: none;
+  font-weight: 500;
+}
+.remember a:hover {
+  text-decoration: underline;
+}
+.btn {
+  width: 100%;
+  margin-top: 20px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-left: 2px;
+  background: #445670;
+  color: white;
+  font-size: 1.1em;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  background: #7591b8;
+}
+.register {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+}
+.register p {
+  margin-right: 5px;
+  color: #7591b8;
+}
+.register a {
+  text-decoration: none;
+  color: #7591b8;
+  font-weight: 500;
+}
+.register a:hover {
+  text-decoration: underline;
+}
